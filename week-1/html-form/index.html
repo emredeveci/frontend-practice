@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 20px;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .form-element {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 5px;
+      }
+
+      p {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>HTML Form</h2>
+    <form action="">
+      <!-- Text Input -->
+      <div class="form-element">
+        <label for="fname">Name:</label>
+        <input type="text" name="fname" id="fname" />
+      </div>
+      <!-- Text Input -->
+      <div class="form-element">
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" />
+      </div>
+      <!-- Email Input -->
+      <div class="form-element">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <!-- Password Input -->
+      <div class="form-element">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <!-- Radio Button Input -->
+      <div class="form-element">
+        <p>Gender:</p>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="male" />
+        <label for="female">Female</label>
+        <input
+          type="radio"
+          name="gender"
+          value="undisclosed"
+          id="undisclosed"
+        />
+        <label for="undisclosed">Prefer not to disclose</label>
+      </div>
+      <!-- Select Input -->
+      <div class="form-element">
+        <label for="fruit">Favorite fruit:</label>
+        <select name="fruit" id="fruit">
+          <option value="" disabled selected>Select a fruit</option>
+          <option value="strawberry">Strawberry</option>
+          <option value="watermelon">Watermelon</option>
+          <option value="banana">Banana</option>
+        </select>
+      </div>
+      <!-- Text area Input -->
+      <div class="form-element">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="4" cols="30"></textarea>
+      </div>
+      <!-- Text area Input -->
+      <div class="form-element">
+        <input type="submit" name="Submit" class="form-element" />
+      </div>
+    </form>
+  </body>
+</html>
