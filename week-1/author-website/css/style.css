@@ -1,0 +1,246 @@
+:root {
+    --main-bg-color: #272727;
+    --text-white: #FFFFFF;
+    --main-header-color: #cc2e22;
+    --main-footer-color: #BD2A20;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* header styling */
+
+header {
+    background-color: var(--main-header-color);
+    font-size: 26px;
+    padding-top: 26px;
+}
+
+header h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 26px;
+    color: var(--main-bg-color);
+}
+
+nav {
+    background-color: var(--main-header-color);
+    font-size: 18px;
+    border-bottom: solid 10px var(--main-footer-color);
+}
+
+nav ul {
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+}
+
+nav a {
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 700;
+    color: var(--text-white);
+    font-size: 20px;
+    position: relative;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--main-bg-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+nav a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* body design */
+
+.container {
+    background-color: var(--main-bg-color);
+    flex: 1;
+}
+
+/* footer styling */
+
+footer {
+    width: 100%;
+    background-color: var(--main-footer-color);
+    color: var(--text-white);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* about page styling */
+
+img.circle {
+    border-radius: 50%;
+    padding: 30px 0;
+}
+
+div h3 {
+    font-family: 'Cinzel Decorative', serif;
+    color: var(--main-header-color);
+}
+
+div p {
+    color: white;
+}
+
+.about {
+    padding-bottom: 40px;
+}
+
+.about h3 {
+    padding-top: 25px;
+}
+
+.about p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* books page styling */
+
+.books {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.books ul {
+    list-style: none;
+}
+
+.books li {
+    color: var(--text-white);
+}
+
+.books li:not(:first-child) {
+    padding-top: 5px;
+}
+
+.books h3 {
+    padding-top: 30px;
+}
+
+.books ul {
+    text-align: center;
+}
+
+.books ul li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* blockquote styling */
+
+.blockquote {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 620px;
+    margin: 80px auto;
+    align-self: center;
+}
+
+/* Blockquote header */
+
+h1 span {
+    color: var(--text-white);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blockquote h1 {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    /* for pseudos */
+    color: var(--main-footer-color);
+    font-size: 1.8rem !important;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid #fff;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+/* Blockquote right double quotes */
+.blockquote h1:after {
+    content: "";
+    position: absolute;
+    border: 2px solid var(--main-footer-color);
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3;
+}
+
+.blockquote h1:before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    border: 6px solid var(--main-bg-color);
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left: 150px;
+    padding-left: 12px;
+}
+
+
+.blockquote h4:first-letter {
+    margin-left: -12px;
+}
+
+.blockquote h4 em {
+    padding-left: 15px;
+}
+
+/* XS, SM */
+@media (max-width: 991px) {
+    .main div.grow-1 {
+        padding: 0 15px;
+    }
+}
+
+/* SM */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* MD, LG */
+@media (min-width: 992px) {}
