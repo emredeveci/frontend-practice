@@ -1,0 +1,116 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* header styling */
+
+header {
+    background-color: #333333;
+    color: white;
+    padding-top: 20px;
+}
+
+/* menu styling */
+
+nav {
+    color: white;
+}
+
+nav ul {
+    background-color: #333333;
+    list-style: none;
+    padding: 15px 0px 25px 0;
+    margin: 0px;
+}
+
+nav ul li a {
+    margin: 0 20px;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav ul li a:visited {
+    color: rgb(255, 0, 255);
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+/* blog section styling */
+
+.blogs {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 30px 15px;
+    flex: 1;
+}
+
+.blogs h2 {
+    color: #333;
+}
+
+.blogs article {
+    background-color: white;
+    padding: 10px;
+}
+
+.blogs h3 {
+    margin-top: 15px;
+}
+
+.blogs p {
+    color: #666;
+}
+
+/* article styling */
+
+.blog-articles {
+    margin-top: 30px;
+    width: 100%;
+    gap: 15px;
+}
+
+article {
+    box-shadow: 0px 0px 2px 4px rgba(0, 0, 0, 0.02);
+    border-radius: 3px;
+}
+
+.blog-articles a:hover {
+    box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+}
+
+/* post page styling */
+
+.blog-articles article.post {
+    padding-top: 25px;
+}
+
+.blog-articles article.post p {
+    font-size: 16px;
+}
+
+.blog-articles article.post h3 {
+    font-size: 22px;
+}
+
+.blog-articles.post {
+    margin-top: 15px;
+}
+
+/* footer styling */
+
+footer {
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
