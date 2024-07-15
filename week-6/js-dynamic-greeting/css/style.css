@@ -1,0 +1,73 @@
+body {
+  background: black;
+}
+
+.clock {
+  position: relative;
+  text-align: center;
+  color: #e98208;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 7px;
+}
+
+.text1 {
+  position: relative;
+  text-align: center;
+  color: #e98208;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 7px;
+}
+
+.text2 {
+  position: relative;
+  text-align: center;
+  color: #e98208;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 7px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+img {
+  margin-top: 120px;
+  width: 17%;
+}
+
+@keyframes animatedText {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+#myName {
+  background: linear-gradient(to right,
+      #5cb9e0 20%,
+      #22afec 30%,
+      #e82b90 70%,
+      #e59605 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: animatedText 2s ease-in-out infinite alternate;
+}
+
+#myClock {
+  background: linear-gradient(to right,
+      #e59605 20%,
+      #e82b90 30%,
+      #22afec 70%,
+      #5cb9e0 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: animatedText 2s ease-in-out infinite alternate;
+}
