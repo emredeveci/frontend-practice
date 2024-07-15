@@ -12,11 +12,14 @@ html {
 
 .drums {
     padding: min(1vh, 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .drums img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
     opacity: 70%;
 }
 
