@@ -1,4 +1,5 @@
-### Live Site
+### Drum Kit
 
-[Proje Adı](https://emredeveci.github.io/drum-kit)
-![Proje Ekran Görüntüsü](./assets/images/screenshot.png)
+To see this project live, click here:
+[Drum Kit](https://emredeveci.github.io/drum-kit)
+![Drum Kit Screenshot](./assets/images/screenshot.png)
