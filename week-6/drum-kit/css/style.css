@@ -40,10 +40,20 @@ html {
     mix-blend-mode: screen;
     background-color: rgba(255, 255, 255, 0.8);
     outline: none;
+    border: none;
 }
 
 .buttons button:hover {
     transform: scale(1.1);
+}
+
+.buttons button:active {
+    outline: none;
+    border: none;
+}
+
+.buttons button:focus {
+    outline-color: #1D1031;
 }
 
 button.scaled {
